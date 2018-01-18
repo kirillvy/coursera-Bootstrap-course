@@ -8,10 +8,12 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
     <!-- Bootstrap CSS -->
+    <!-- build:css css/main.css -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/bootstrap-social.css">
     <link rel="stylesheet" href="css/styles.css">
+    <!-- endbuild -->
     <title>Ristorante Con Fusion</title>
 </head>
 
@@ -82,27 +84,27 @@
                                 <label for="guests1" class="col-md-2 col-form-label">Number of guests</label>
                                 <div class="col-md-10">
                                     <div class="custom-control custom-radio custom-control-inline">
-                                        <input type="radio" id="guests1" name="guests1" class="custom-control-input">
+                                        <input type="radio" id="guests1" name="guests" class="custom-control-input">
                                         <label class="custom-control-label" for="guests1">1</label>
                                     </div>
                                     <div class="custom-control custom-radio custom-control-inline">
-                                        <input type="radio" id="guests2" name="guests2" class="custom-control-input">
+                                        <input type="radio" id="guests2" name="guests" class="custom-control-input">
                                         <label class="custom-control-label" for="guests2">2</label>
                                     </div>
                                     <div class="custom-control custom-radio custom-control-inline">
-                                        <input type="radio" id="guests3" name="guests3" class="custom-control-input">
+                                        <input type="radio" id="guests3" name="guests" class="custom-control-input">
                                         <label class="custom-control-label" for="guests3">3</label>
                                     </div>
                                     <div class="custom-control custom-radio custom-control-inline">
-                                        <input type="radio" id="guests4" name="guests4" class="custom-control-input">
+                                        <input type="radio" id="guests4" name="guests" class="custom-control-input">
                                         <label class="custom-control-label" for="guests4">4</label>
                                     </div>
                                     <div class="custom-control custom-radio custom-control-inline">
-                                        <input type="radio" id="guests5" name="guests5" class="custom-control-input">
+                                        <input type="radio" id="guests5" name="guests" class="custom-control-input">
                                         <label class="custom-control-label" for="guests5">5</label>
                                     </div>
                                     <div class="custom-control custom-radio custom-control-inline">
-                                        <input type="radio" id="guests6" name="guests6" class="custom-control-input">
+                                        <input type="radio" id="guests6" name="guests" class="custom-control-input">
                                         <label class="custom-control-label" for="guests6">6</label>
                                     </div>
                                 </div>
@@ -259,31 +261,14 @@
             </div>
         </div>
     </footer>
-
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <!-- build:js js/main.js -->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <!--     <script src="node_modules/tether/dist/js/tether.min.js"></script>
- -->
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            $("#mycarousel").carousel({
-                interval: 2000
-            });
-            $("#carousel-button").click(function() {
-                if ($("#carousel-button").children("span").hasClass("fa-pause")) {
-                    $("#mycarousel").carousel('pause');
-                    $("#carousel-button").children("span").removeClass("fa-pause");
-                    $("#carousel-button").children("span").addClass("fa-play");
-                } else if ($("#carousel-button").children("span").hasClass("fa-play")) {
-                    $("#mycarousel").carousel('cycle');
-                    $("#carousel-button").children("span").removeClass("fa-play");
-                    $("#carousel-button").children("span").addClass("fa-pause");
-                }
-            });
-        });
-    </script>
+    <script src="js/scripts.js"></script>
+    <!-- endbuild -->
+
 </body>
 
-</html
+</html>
